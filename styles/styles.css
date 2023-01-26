@@ -110,6 +110,28 @@ i{
     width: 100%;
     padding: 15px;
 }
+.ratings i{
+    color: gold;
+    
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: Blue;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .footer{
     margin: 0;
     padding: 5%;
