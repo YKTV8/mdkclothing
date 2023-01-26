@@ -68,8 +68,14 @@ p{
     font-size: large;
 }
 i{
-    color: red;
-    z-index: 2000;
+    color: #fff;
+}
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.header .row{
+    margin-top: 70px;
+
 }
 .footer{
     margin: 0;
