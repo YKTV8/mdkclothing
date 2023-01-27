@@ -44,14 +44,72 @@ p{
     justify-content: space-around;
 }
 .hero{
-    max-width:8080px;
-    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:static;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    padding: 0%;
+    background-image: url(../images/mainpagemdk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 500%;
+    background-color: rgba(113,123,125,.85);
 }
-.hero img{
+.overlay h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    font-size: 520%;
+}
+.overlay p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;  
+}
+.overlay{
+    top: 0;
+    left: 0;
+    background-color: rgba(113,123,125,.45);
     width: 100%;
-    position: relative;
-    background-position-x: right;
+    height: 500px;
+    padding: 0;
 }
+button{
+    margin: 0;
+    position: absolute;
+    top: 140%;
+    left: 45%;
+    -ms-transform: translateY(-50%); 
+    transform: translateY(-50%); 
+    height: 55px; 
+    width: 155px;
+    border-radius: 30px;
+}
+button:hover{
+    background-color: rgba(113,123,125,.85);
+    color: blue;
+    transition: 1.5s;
+    font-weight: bold;
+}
+/* .hero img{
+    margin-bottom: 20%;
+    width: 100%;
+    position: absolute;
+    top: 1000;
+    left: 0;
+    height: 540px;
+    overflow: hidden;
+    background-size: 100%;
+    background-position: center;
+    
+} */
 .column1{
     flex-basis: 50%;
     min-width: 300px;
