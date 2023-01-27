@@ -43,6 +43,15 @@ p{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.hero{
+    max-width:8080px;
+    height: 50%;
+}
+.hero img{
+    width: 100%;
+    position: relative;
+    background-position-x: right;
+}
 .column1{
     flex-basis: 50%;
     min-width: 300px;
@@ -55,6 +64,10 @@ p{
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
+}
+.column1 p{
+    padding-left: 1%;
+    padding-right: 25%;
 }
 .btn{
    display: inline-block;
