@@ -162,6 +162,8 @@ i{
 .column3 img{
     width: 100%;
     padding: 15px;
+    /* height: 300px;
+    width: 250px; */
 }
 .small-container{
     display: flex;
@@ -175,10 +177,10 @@ i{
     flex-basis: 25%;
     min-width: 250px;
     margin-bottom: 50px;
-    padding: 10px;
+    padding: 30px;
 }
 .column4 img{
-    width: 100%;
+    width: 150%;
     padding: 15px;
 }
 .ratings i{
@@ -204,9 +206,94 @@ i{
     transform: translateX(-50%);
 }
 .footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 5%;
+    min-width: 100px;
     margin: 0;
     padding: 5%;
     width: 100%;
     height: 45px;
     background-color: rgba(208,208,208,1);
+}
+.footer .poweredBy{
+    margin: 1%;
+}
+.footer .mdk{
+    margin: 1%;
+}
+/* Testimonial */
+
+.testimonial .column3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 15px 0px rgba(100, 100, 100, 0.1);
+    cursor: pointer;
+    transition: transform 0.8s;
+}
+.testimonial .column3 img{
+    width: 175px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .small-container{
+    padding-left: 300px;
+}
+.testimonial .column3:hover{
+    transform: translateY(-10px);
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+@media only screen and (max-width: 800px){
+    body{
+        width: auto;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #939399;
+        width: 100%;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: white;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+        cursor:pointer;
+    }
+    .testimonial .small-container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    .small-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-right: 5%;
+    }
+    .hero{
+        position: static;
+        width: fit-content;
+        background-size: 100%;
+        
+    }
+    .hero img{
+        width: fit-content;
+    }
 }
