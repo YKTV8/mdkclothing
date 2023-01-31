@@ -1,4 +1,4 @@
-@media screen and (min-width:801px)  {
+@media screen and (min-width:801px) and (max-width:6000px) {
     
 
 *{
@@ -45,6 +45,7 @@ p{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
 .hero{
     display: flex;
@@ -156,6 +157,11 @@ i{
 }
 .catergories{
     margin: 70px 0;
+    padding-left: 5%;
+}
+.catergories img{
+    width: 400px;
+    height: 400px;
 }
 .column3{
     flex: 30%;
@@ -174,7 +180,6 @@ i{
     align-self: center;
     max-width: 1080px;
     margin: 5%;
-    padding-left: 15%;
 }
 .column4{
     flex-basis: 25%;
@@ -229,6 +234,10 @@ i{
 }
 /* Testimonial */
 
+.testimonial{
+    display: flex;
+    padding-left: 15%;
+}
 .testimonial .column3{
     text-align: center;
     padding: 40px 20px;
@@ -242,7 +251,7 @@ i{
     border-radius: 50%;
 }
 .testimonial .small-container{
-    padding-left: 300px;
+    padding-left: 0px;
 }
 .testimonial .column3:hover{
     transform: translateY(-10px);
